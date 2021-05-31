@@ -1,1 +1,2 @@
-# goit-markup-hw-03-38
+# goit-markup-hw-02.
+Домашнее задание №38

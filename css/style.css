@@ -1,0 +1,255 @@
+/* универсальный селектор */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+}
+
+:root{
+    --primary-text-color: #212121;
+    --tittle-text-color: #757575;
+    --accent-color: #2196f3;
+    --primary-bg-color: #ffffff;
+    --background-color: #e5e5e5;
+    --background-color-second: #2f303a;
+    --background-color-third: #f5f4fa;
+    --contact-color: rgba(255, 255, 255, 0.6); 
+    --main-font: 'Roboto', sans-serif;
+    --accent-font: 'Raleway', sans-serif;
+
+}
+
+/* .container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;   
+} */
+
+body{
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-family: var(--main-font);
+}
+header {
+    background-color: var(--primary-bg-color);
+}
+main{
+    background-color: var(--primary-bg-color);
+}
+a {
+    color: inherit;
+    text-decoration: none;
+} 
+ul{
+    list-style: none;
+}
+
+
+/* LOGO */
+
+.logo-blue {
+    font-family: var(--accent-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+.logo-black{
+    font-family: var(--accent-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.logo-white{
+    font-family: var(--accent-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    color: var(--primary-bg-color)  
+}
+
+/* ------------------MENU INDEX HEADER------------------- */
+header{
+    background-color: var(--primary-bg-color);
+}
+.nav-list a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em; 
+    text-transform: capitalize;
+}
+/* contact-header */
+.tel-nav{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em; 
+    color: var(--tittle-text-color);
+}
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a:active{
+    color: var(--accent-color);
+}
+.current {
+    color: var(--accent-color);
+}
+.tel-nav a:hover,
+.tel-nav a:focus{
+    color: var(--accent-color);
+}
+
+/* -------------HERO--------------- */
+.hero{
+background-color: var(--background-color-second);
+color: var(--primary-bg-color);
+text-align: center;
+
+}
+
+.hero h1{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36em;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--primary-bg-color);  
+}
+/* button hero */
+.hero-button{
+    font-family: var(--main-font);
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus{
+    color: var(--primary-text-color);
+}
+/*------------SOFTSKILL-------------- */
+.softskill{
+    background-color: var(--primary-bg-color);
+}
+.softskill h3{
+font-size: 14px;
+line-height: 1.14em;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--primary-text-color);
+}
+.softskill p{
+font-size: 14px;
+line-height: 1.71em;
+letter-spacing: 0.03em;
+color:var(--tittle-text-color);
+}
+
+/* --------------DO------------------- */
+.do{
+    background-color: var(--primary-bg-color);
+}
+.do h2{
+font-size: 36px;
+line-height: 1.16em;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--primary-text-color);
+}
+
+/* ---------------TEAM---------------- */
+.team{
+    background-color: var(--background-color-third);
+}
+.team h2{
+font-size: 36px;
+line-height: 1.16em;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--primary-text-color);
+}
+.employee-info{
+    background: var(--primary-bg-color);
+}
+.employee-info h3{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18em;
+text-align: center;
+letter-spacing: 0.03em;
+color:var(--primary-text-color);
+}
+.employee-info p{
+font-size: 16px;
+line-height: 1.18em;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--tittle-text-color);
+}
+
+/* ---------------FOOTER-------------- */
+footer{
+    background-color:var(--background-color-second) ;
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+    color: var(--primary-bg-color);
+  }
+.contact{
+font-style: normal;
+font-size: 14px;
+line-height: 1.71em;
+letter-spacing: 0.03em;
+color: var(--contact-color);
+}
+
+/*------------ PORTFOLIO --------------------*/
+
+.button-menu {
+    background: var(--background-color);
+    border-radius: 4px;
+    padding: 6px 22px;
+    min-width: 130px;
+    text-align: center;
+    border: 1px solid transparent;
+    border-color: var(--accent-color);
+    cursor: pointer;
+  }
+  
+  .button-menu:hover,
+  .button-menu:focus {
+    background: var(--accent-color);
+    color: var(--primary-bg-color);
+  }
+
+    .skill-info h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+    }
+    .skill-info p{
+    font-size: 16px;
+    line-height: 1.18em;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--tittle-text-color);
+    }
